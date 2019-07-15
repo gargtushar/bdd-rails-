@@ -1,0 +1,5 @@
+current directory: /home/daffodil/railsPract/bdd-app/vendor/bundle/ruby/2.6.0/gems/childprocess-1.0.1/ext
+/home/daffodil/.rvm/rubies/ruby-2.6.3/bin/ruby mkrf_conf.rb
+
+current directory: /home/daffodil/railsPract/bdd-app/vendor/bundle/ruby/2.6.0/gems/childprocess-1.0.1/ext
+/home/daffodil/.rvm/rubies/ruby-2.6.3/bin/ruby -rrubygems /home/daffodil/railsPract/bdd-app/vendor/bundle/ruby/2.6.0/gems/rake-12.3.2/exe/rake RUBYARCHDIR\=/home/daffodil/railsPract/bdd-app/vendor/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/childprocess-1.0.1 RUBYLIBDIR\=/home/daffodil/railsPract/bdd-app/vendor/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/childprocess-1.0.1

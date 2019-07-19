@@ -7,6 +7,23 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
+            # Uncomment the following line to pull your code,
+            # then proceed by adding your custom commands:
+  - name: MySQL
+    task:
+      jobs:
+      - name: MySQL Create user
+        commands:
+          - checkout
+          - sem-service start mysql
+          - mysql -h 127.0.0.1 -P 3306 -u root < rMySQL.sql
+
+      - name: MySQL Create admin user
+        commands:
+          - checkout
+          - sem-service start mysql
+          - mysql -h 127.0.0.1 -P 3306 -u root < adminMySQL.sql          
+  
   - name: Ruby example
     task:
       jobs:
@@ -19,6 +36,3 @@ blocks:
             - bundle exec rake test:db:prepare
             - bundle exec rspec
             - bundle exec cucumber
-            # Uncomment the following line to pull your code,
-            # then proceed by adding your custom commands:
-            

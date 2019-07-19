@@ -13,6 +13,11 @@ blocks:
         - name: Run some code
           commands:
             - ruby -e 'puts "evol".reverse'
+            bundle install --deployment --path vendor/bundle
+            bundle exec rake db:setup
+            bundle exec rake test:db:prepare
+            bundle exec rspec
+            bundle exec cucumber
             # Uncomment the following line to pull your code,
             # then proceed by adding your custom commands:
             #- checkout
